@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Okinda | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: #1e293b; background-color: #fdfdfd; line-height: 1.6; }
+        .page { display: none; animation: slideUp 0.5s ease-out; }
+        .page.active { display: block; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .nav-link.active { color: #2563eb; font-weight: 800; border-bottom: 3px solid #2563eb; }
+        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .sticky-footer { background: #1e293b; color: white; border-top: 1px solid #334155; }
+        .img-zoom { transition: transform 0.5s ease; overflow: hidden; }
+        .img-zoom:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="pb-24">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#" onclick="showPage('home')" class="text-2xl font-black tracking-tighter uppercase">OKINDA<span class="text-blue-600">.</span></a>
+            <div class="hidden md:flex space-x-10 text-[11px] font-black uppercase tracking-[0.2em] text-slate-500">
+                <button onclick="showPage('home')" class="nav-link">Overview</button>
+                <button onclick="showPage('experience')" class="nav-link">Professional</button>
+                <button onclick="showPage('freelance')" class="nav-link">Freelance</button>
+                <button onclick="showPage('photography')" class="nav-link">Photography</button>
+            </div>
+            <a href="mailto:okinda27@gmail.com" class="bg-blue-600 text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-slate-900 transition shadow-lg shadow-blue-200">Contact</a>
+        </div>
+    </nav>
+
+    <!-- STICKY QUICK LINKS BAR -->
+    <div class="fixed bottom-0 w-full z-50 sticky-footer py-4 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-6 flex justify-around items-center text-[10px] md:text-xs font-bold uppercase tracking-widest text-white">
+            <a href="https://linkedin.com/in/bill-okinda-22b8b1bb" target="_blank" class="hover:text-blue-400 transition flex items-center"><i class="fa-brands fa-linkedin text-lg mr-2"></i> CV & LinkedIn</a>
+            <a href="https://www.upwork.com/freelancers/~012c4f7416079e3001" target="_blank" class="hover:text-green-400 transition flex items-center"><i class="fa-brands fa-upwork text-lg mr-2"></i> Upwork Agency</a>
+            <a href="#" class="hover:text-red-400 transition flex items-center"><i class="fa-solid fa-camera text-lg mr-2"></i> Photo Folio</a>
+        </div>
+    </div>
+
+    <!-- PAGE: HOME -->
+    <main id="home" class="page active pt-40 pb-20">
+        <section class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-3/5">
+                    <span class="bg-blue-50 text-blue-600 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-6 inline-block">Strategist & Storyteller</span>
+                    <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-8 text-slate-900">
+                        Bridging <br><span class="text-blue-600">Growth</span> & <br>Visual Narrative.
+                    </h1>
+                    <p class="text-xl text-slate-500 max-w-2xl mb-12">
+                        I am a Business Development specialist and Photographer. I help companies scale through remote platforms and help youth find global careers.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button onclick="showPage('experience')" class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold shadow-xl">Full Experience</button>
+                        <button onclick="showPage('photography')" class="bg-white border border-slate-200 px-8 py-4 rounded-2xl font-bold">Creative Portfolio</button>
+                    </div>
+                </div>
+                
+                <!-- VISUAL 1: HERO IMAGE -->
+                <div class="md:w-2/5">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-blue-600/10 rounded-[3rem] -rotate-3"></div>
+                        <!-- PASTE YOUR MAIN PROFILE IMAGE LINK BELOW -->
+                        <img src="https://i.postimg.cc/6ptYqXnv/IMG-8351.jpg" 
+                             alt="Bill Okinda" 
+                             class="relative w-full h-[500px] object-cover rounded-[3rem] shadow-2xl border-4 border-white">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PAGE: EXPERIENCE -->
+    <main id="experience" class="page pt-40 pb-20">
+        <section class="max-w-6xl mx-auto px-6">
+            <h2 class="text-xs font-black uppercase tracking-[0.4em] text-blue-600 mb-6">Professional History</h2>
+            <h3 class="text-5xl font-black tracking-tighter mb-16 italic">Building bridges to the <span class="text-slate-400">digital economy.</span></h3>
+            
+            <div class="space-y-32">
+                <!-- GENERATION KENYA -->
+                <div class="flex flex-col md:flex-row gap-16">
+                    <div class="md:w-1/2">
+                        <span class="text-sm font-black text-blue-600 italic">Generation Kenya</span>
+                        <h4 class="text-4xl font-black mt-2 mb-6">Advocating for Untapped Talent</h4>
+                        <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                            My work at <strong>Generation Kenya</strong> is driven by a simple belief: <strong>opportunity should be as universal as talent.</strong> As the Employer Engagement Lead, I am the link between high-potential youth and the companies that need their skills.
+                        </p>
+                        <ul class="space-y-4 text-slate-700">
+                            <li><i class="fa-solid fa-check-circle text-blue-600 mr-2"></i> Onboarded 20+ major employers for sustainable hiring.</li>
+                            <li><i class="fa-solid fa-check-circle text-blue-600 mr-2"></i> Mentored 200+ youth in CV branding and interviewing.</li>
+                            <li><i class="fa-solid fa-check-circle text-blue-600 mr-2"></i> Created a pipeline of 300+ employer leads.</li>
+                        </ul>
+                    </div>
+                    <!-- VISUAL 2: GENERATION KENYA IMPACT IMAGE -->
+                    <div class="md:w-1/2">
+                        <div class="img-zoom rounded-[2.5rem] shadow-xl">
+                            <img src="https://i.postimg.cc/R0ctH6Bp/AP1Gcz-M09a4k-Uf-PSFET-6HOs-Nnlg-FUv-Znbnhz-YHp-XVd-MHZfng-NAdl-Sj-VOP5Mhj3IZDCb-MMMF49zd-G3n-Ls-EYt.jpg" 
+                                 alt="Mentorship Visual" 
+                                 class="w-full h-96 object-cover">
+                        </div>
+                        <p class="text-xs text-slate-400 mt-4 italic">Visualizing Mentorship: Helping 200+ youth find their voice in the job market.</p>
+                    </div>
+                </div>
+
+                <!-- eMOBILIS -->
+                <div class="flex flex-col md:flex-row-reverse gap-16 border-t pt-20">
+                    <div class="md:w-1/2">
+                        <span class="text-sm font-black text-blue-600 italic">eMobilis BPO</span>
+                        <h4 class="text-4xl font-black mt-2 mb-6">Platform Lead & Project Strategist</h4>
+                        <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                            I managed the <strong>Upwork Agency</strong> and remote B2B platforms for eMobilis, ensuring the institutional presence was high-value and project delivery was seamless.
+                        </p>
+                        <ul class="space-y-2 text-slate-500 font-medium">
+                            <li>• Closed $50,000+ in contracts via cold outreach.</li>
+                            <li>• Assisted end-to-end project management with supervisor coordination.</li>
+                            <li>• Maintained 97% CSAT across complex platform workflows.</li>
+                        </ul>
+                    </div>
+                    <!-- VISUAL 3: BPO/PLATFORM MANAGEMENT IMAGE -->
+                    <div class="md:w-1/2">
+                        <div class="img-zoom rounded-[2.5rem] shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1000" 
+                                 alt="Platform Management" 
+                                 class="w-full h-96 object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PAGE: FREELANCE -->
+    <main id="freelance" class="page pt-40 pb-20 bg-slate-100">
+        <section class="max-w-6xl mx-auto px-6">
+            <h2 class="text-xs font-black uppercase tracking-[0.4em] text-blue-600 mb-6 text-center">Freelance Strategy</h2>
+            <h3 class="text-5xl font-black tracking-tighter mb-20 text-center">Data, Growth & <span class="text-slate-400">Customer Success.</span></h3>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h4 class="text-3xl font-black mb-6">Customer Success & Outreach</h4>
+                    <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                        For <strong>The World's Greatest Rejuvenation</strong>, I handled the entire customer journey. This included solving complex issues on Gorgias and Shopify, and conducting cold outreach to drive new business.
+                    </p>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                        <p class="text-sm font-bold text-slate-500 mb-4 uppercase tracking-widest">Stack Expertise</p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-blue-600 text-white px-4 py-1 rounded-full text-[10px] font-bold">Gorgias</span>
+                            <span class="bg-blue-600 text-white px-4 py-1 rounded-full text-[10px] font-bold">Shopify</span>
+                            <span class="bg-blue-600 text-white px-4 py-1 rounded-full text-[10px] font-bold">Apollo.io</span>
+                            <span class="bg-blue-600 text-white px-4 py-1 rounded-full text-[10px] font-bold">ZoomInfo</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- VISUAL 4: FREELANCE DASHBOARD / RESULTS IMAGE -->
+                <div class="relative">
+                    <div class="absolute inset-0 bg-blue-600 rounded-[2.5rem] rotate-2"></div>
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000" 
+                         alt="Freelance Results" 
+                         class="relative rounded-[2.5rem] shadow-2xl h-96 w-full object-cover">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PAGE: PHOTOGRAPHY -->
+    <main id="photography" class="page pt-40 pb-20">
+        <section class="max-w-7xl mx-auto px-6">
+            <h2 class="text-xs font-black uppercase tracking-[0.4em] text-blue-600 mb-6">Visual Storyteller</h2>
+            <h3 class="text-5xl font-black tracking-tighter mb-16">Capturing the <span class="text-slate-400 italic font-medium">human narrative.</span></h3>
+            
+            <div class="bg-slate-900 text-white p-12 md:p-20 rounded-[3rem] mb-20 flex flex-col md:flex-row gap-16 items-center">
+                <div class="md:w-1/2">
+                    <span class="text-blue-400 font-black uppercase tracking-widest text-xs">UNFPA Recognition</span>
+                    <h4 class="text-4xl font-black mt-4 mb-6 italic underline">The GBV Photo Campaign</h4>
+                    <p class="text-xl text-slate-400 leading-relaxed italic">
+                        "Winning 3rd place in this campaign was a testament to the power of a lens to advocate for the voiceless. It's where my Literature degree meets the real world."
+                    </p>
+                </div>
+                <!-- VISUAL 5: THE UNFPA AWARD WINNING SHOT SLOT -->
+                <div class="md:w-1/2">
+                    <img src="https://i.postimg.cc/FFgwrDJX/Screenshot-2026-04-11-203801.png" 
+                         alt="UNFPA Campaign" 
+                         class="rounded-[2rem] h-80 w-full object-cover shadow-2xl grayscale">
+                </div>
+            </div>
+
+            <!-- THE 8-IMAGE VISUAL GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- PHOTO 6 -->
+                <div class="img-zoom h-80 rounded-3xl bg-slate-100 relative group overflow-hidden">
+                    <img src="https://i.postimg.cc/Pfwms5Nt/AP1Gcz-MFu-N2Fatj-Ysl-Qn-NBrin-l-G6a-XZkp-E-7hn-U2KRgx-Vu0L6UF0y-WDo-Dxab-F2Z01a-HGUa-Oq-P-7AJp-Od-B.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-6 text-center">
+                        <p class="text-white text-xs font-bold uppercase tracking-widest">Documentary Shot 01</p>
+                    </div>
+                </div>
+                <!-- PHOTO 7 -->
+                <div class="img-zoom h-80 rounded-3xl bg-slate-100 relative group overflow-hidden">
+                    <img src="https://i.postimg.cc/9FXFPx3q/AP1Gcz-Pe-SGj-Ey-OMV3wjw-YXc-Rz9m-8-QKNql-MQerp654xsu-WV3g-S4rsiq-ZXf-J84LZFi8Kc-x-Uigi-U62ABx-ccj-R.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-6 text-center">
+                        <p class="text-white text-xs font-bold uppercase tracking-widest">Documentary Shot 02</p>
+                    </div>
+                </div>
+                <!-- PHOTO 8 -->
+                <div class="img-zoom h-80 rounded-3xl bg-slate-100 relative group overflow-hidden">
+                    <img src="https://i.postimg.cc/KzNhR28k/AP1Gcz-Nj-La-Mxi-NYa6CYgi-EE-YU-V1r-N3AIKsy3t-LNnfyr0e-S9lwg-l8j2p-ZU4jb-U6szp-Hw-GXGACexup-FFbe-HE5.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-6 text-center">
+                        <p class="text-white text-xs font-bold uppercase tracking-widest">Portrait 01</p>
+                    </div>
+                </div>
+                <!-- PHOTO 9 -->
+                <div class="img-zoom h-80 rounded-3xl bg-slate-100 relative group overflow-hidden">
+                    <img src="https://i.postimg.cc/pTV1cnPG/AP1Gcz-Pf-Tc-h-Ka-Vo-MPDikud7t-M55o-Pky-L84138Oe-TNf7L-s-AGc-Oor-JJJwpg-Ia1e-Lxeb8j-O9THZymlv-No-CYG.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-6 text-center">
+                        <p class="text-white text-xs font-bold uppercase tracking-widest">Portrait 02</p>
+                    </div>
+                </div>
+                <!-- PHOTO 10 -->
+                <div class="img-zoom h-80 rounded-3xl bg-slate-100 relative group overflow-hidden">
+                    <img src="https://i.postimg.cc/6pDYBXHN/AP1Gcz-Mr1ZMQy3U8Ek1uj-N5It7bp5q2q-ZTm3QOp2Wh-TIG5WIY0Ns-VFy1YDye-NS3I-W8Ay225ODF4K80R0BI6Pso2ip-Ylx.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-6 text-center">
+                        <p class="text-white text-xs font-bold uppercase tracking-widest">Commercial 01</p>
+                    </div>
+                </div>
+                <!-- PHOTO 11 -->
+                <div class="img-zoom h-80 rounded-3xl bg-slate-100 relative group overflow-hidden">
+                    <img src="https://i.postimg.cc/mgbXgHF7/AP1Gcz-NBUAun-L9b49h-Vvh-Yos2l8Y-1q16V1a-QIwq-KB91n5y5ZQDGj-NVx-FI6ROzh-Zi5uq-Ilo7-6RUs-H2AOg3DJre-W.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-6 text-center">
+                        <p class="text-white text-xs font-bold uppercase tracking-widest">Commercial 02</p>
+                    </div>
+                </div>
+                <!-- PHOTO 12 -->
+                <div class="img-zoom h-80 rounded-3xl bg-slate-100 relative group overflow-hidden">
+                    <img src="https://i.postimg.cc/rsN1Bfjv/AP1Gcz-Pm-TUgo4YA2De6yt-Vf-KL93Kdk0oj-Ck2ws-Ri-Oqe0Itc-Gx-Y5E-Wabb8o-UCNj-VHEyu5Wg-GL807-Its2Tvp-G8F.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-6 text-center">
+                        <p class="text-white text-xs font-bold uppercase tracking-widest">Social Impact 01</p>
+                    </div>
+                </div>
+                <!-- PHOTO 13 -->
+                <div class="img-zoom h-80 rounded-3xl bg-slate-100 relative group overflow-hidden">
+                    <img src="https://i.postimg.cc/pVCnt5R5/AP1Gcz-OUzp-Pjkj-MSL2Fp-ZFv-Cz2Rf3yua-6aa-IGD7LDiu-Kn5XSd-Or-ELfq5VBya-STtz-QYl-PIm0HMy-BIwn-Px-AX2K.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-6 text-center">
+                        <p class="text-white text-xs font-bold uppercase tracking-widest">Social Impact 02</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+            
+            document.querySelectorAll('.nav-link').forEach(l => {
+                l.classList.remove('active');
+                if(l.textContent.toLowerCase().includes(pageId.substring(0,3)) || (pageId === 'home' && l.textContent === 'Overview')) {
+                    l.classList.add('active');
+                }
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
