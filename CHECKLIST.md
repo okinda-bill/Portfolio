@@ -1,34 +1,32 @@
 # Before going live
 
-Everything below needs Bill's confirmation or files before the redesign is merged into `main`.
+The redesign lives on the `redesign-wip` branch. It goes to `main` (the live site) only once the items marked **Blocking** are done.
 
-## Numbers and claims to confirm
+## Blocking
 
-| Where | Claim on the site | What to confirm |
-|---|---|---|
-| Home, numbers row | 20+ employers onboarded | Current count (converted employers in the BDO Tools Employer CRM) |
-| Home, numbers row | 300+ employer leads | Still accurate |
-| Home, numbers row | 200+ young people coached on CVs and interviews | Bill's own coaching, not programme-wide |
-| Home, numbers row | $50k+ closed at eMobilis | Bill's own deals or the team's, and the period |
-| Experience, eMobilis | 97% customer satisfaction | Source and period |
-| Not yet on site | Candidates placed | "Placed by GK" count from BDO Tools, to add to the numbers row |
-| Partnerships | Partner sectors (NGOs, coffee brand, workspace company, consulting firms) | Generation Kenya OK to name partners such as GiveDirectly, Moyee Coffee, KOFISI Africa |
-| Experience, Adept Technologies | One generic line | 3 to 4 real bullets |
-| Experience, all roles | No dates shown | Start and end month/year for each role |
-| Photography | 3rd place, UNFPA campaign on gender-based violence | Year, exact campaign name, link to announcement |
-| Education | Studying for PMP | Still accurate |
-| Contact forms | "I'll reply within two working days" | Happy to promise this |
+- [ ] **BTM Photography originals.** The gallery still shows placeholders. The only copies found online are 600 × 315 px previews (too small). Need 15 to 30 full-size photos (weddings, events, portraits, documentary, including the UNFPA competition entry), each with place and month/year.
+- [ ] **Partner names.** No clearance from Generation Kenya yet, so no employer is named anywhere on the site. Keep it that way until cleared.
 
-## Files to send
+## Where the content came from
 
-- 2 to 3 headshots (one landscape, one square)
-- 15 to 30 BTM photos (weddings, events, portraits, documentary), each with place and month/year
-- Original UNFPA photo and its title
-- 3 to 6 work photos (Generation Kenya events, employer sessions), with consent from the people shown
-- Current CV (Word or PDF), saved as `cv/Bill-Okinda-CV.pdf`
-- 3 to 5 testimonials with name, role and permission
+| Content | Source |
+|---|---|
+| Roles, dates, achievements, education, certifications | Bill Okinda Master Resume (Google Drive, 30 Sep 2026) |
+| 109 graduates placed by the employer team, 12 cohorts, 70+ employers | BDO_Tools.xlsx SUMMARY and Placements tabs (14 Oct 2026). Team figures, worded as "our employer team" |
+| 20+ employers onboarded, 300+ leads, 200+ coached, $50k+, 97% CSAT | CV (Bill's own figures) |
+| UNFPA 3 Zeros Photo Competition, 3rd place, Zero GBV and Harmful Practices | Photo of the award (Pictures/Screenshots) |
+| Headshots and event photos | Bill's Downloads folder (resized copies in `Downloads/Portfolio site photos`) |
+
+## Worth a second look
+
+- The CV says 300+ leads with "40% conversion to active hiring partners" (about 120), but also 20+ employers onboarded. The site uses 20+ and 300+ and leaves out the 40% until it's reconciled.
+- The CV lists the photojournalism certificate under "Africa School of Aviation". Check that's the right institution.
+- The downloadable CV (`cv/Bill-Okinda-CV.pdf`) includes a personal phone number. It will be public once live.
+- Photo captions assume Bill is the person in the suit at the graduation and at the networking event. Confirm.
+- Event photos were taken by event photographers. Credit them if required.
+- No testimonials yet. Section left out rather than invented.
 
 ## Set-up
 
-- [ ] Web3Forms access key pasted into `assets/js/site.js` (until then, the forms open the visitor's email app)
-- [ ] GitHub Pages turned on: repo Settings → Pages → Deploy from branch → `main` / root
+- [ ] Web3Forms access key in `assets/js/site.js` (until then the forms open the visitor's email app)
+- [ ] GitHub Pages on: repo Settings → Pages → Deploy from branch → `main` / root

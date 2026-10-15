@@ -251,10 +251,6 @@ p { margin: 0 0 1em; max-width: var(--measure); }
 /* ---------- Photography teaser ---------- */
 .teaser { background: var(--film); color: #ECEDEA; border-top: 0; }
 .teaser .lede { color: #B9BFBA; }
-.teaser .sheet { align-self: center; padding-left: 0; padding-right: 0; background: transparent; box-shadow: none; }
-.teaser .sheet::before, .teaser .sheet::after { left: 0; right: 0; }
-.teaser .sheet-grid { grid-template-columns: repeat(3, 1fr); }
-@media (max-width: 640px) { .teaser .sheet-grid { grid-template-columns: repeat(2, 1fr); } .teaser .sheet-grid .frame:nth-child(3) { display: none; } }
 .award { display: grid; gap: 6px; margin-top: 36px; padding-top: 24px; border-top: 1px solid #3A3733; max-width: 60ch; }
 .award p { margin: 0; color: #B9BFBA; font-size: 1rem; }
 .teaser .btn { background: #ECEDEA; color: var(--film); border-color: #ECEDEA; }
@@ -333,3 +329,11 @@ dialog.lightbox::backdrop { background: rgba(8, 9, 9, 0.92); }
 dialog.lightbox img { max-height: 82vh; width: auto; margin: 0 auto; }
 dialog.lightbox p { font-family: var(--sans); font-size: 0.9375rem; text-align: center; margin: 12px auto 0; color: #C9CECA; }
 .lb-close { position: fixed; top: 14px; right: 14px; width: 44px; height: 44px; border-radius: 50%; border: 1px solid #555; background: #1B1E1C; color: #ECEDEA; font-size: 1.5rem; line-height: 1; cursor: pointer; }
+
+/* ---------- Photos inside sections ---------- */
+.inline-photo { margin: 28px 0 0; }
+.inline-photo img { width: 100%; border-radius: 3px; }
+.inline-photo figcaption { margin-top: 8px; }
+.award-photo { margin: 0; justify-self: center; width: min(100%, 380px); position: relative; }
+.award-photo img { width: 100%; border-radius: 2px; box-shadow: 0 0 0 1px #3A3733; }
+.teaser .two-col { align-items: center; }
