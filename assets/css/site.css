@@ -2,6 +2,10 @@
    Fonts: Newsreader (headings + reading text), Archivo (interface, numbers, captions)
    Motif: the photographer's contact sheet, with a grease-pencil mark on the chosen frame. */
 
+@font-face { font-family: "Newsreader"; src: url("../fonts/newsreader.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Newsreader"; src: url("../fonts/newsreader-italic.woff2") format("woff2"); font-weight: 200 800; font-style: italic; font-display: swap; }
+@font-face { font-family: "Archivo"; src: url("../fonts/archivo.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+
 :root {
   --paper: #F4F5F2;
   --surface: #FFFFFF;
@@ -206,8 +210,8 @@ p { margin: 0 0 1em; max-width: var(--measure); }
 }
 
 /* ---------- Impact ledger ---------- */
-.ledger { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); border-top: 1px solid var(--ink); }
-.ledger li { padding: 22px 24px 26px 0; border-bottom: 1px solid var(--line); }
+.ledger { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 45%), 1fr)); column-gap: 20px; border-top: 1px solid var(--ink); }
+.ledger li { padding: 22px 4px 26px 0; border-bottom: 1px solid var(--line); }
 .ledger strong { display: block; font-family: var(--serif); font-weight: 400; font-size: clamp(2.5rem, 3vw + 1rem, 3.5rem); line-height: 1; letter-spacing: -0.02em; margin-bottom: 10px; }
 .ledger span { font-family: var(--sans); font-size: 0.9375rem; color: var(--muted); display: block; max-width: 28ch; }
 
@@ -247,7 +251,7 @@ p { margin: 0 0 1em; max-width: var(--measure); }
 /* ---------- Photography teaser ---------- */
 .teaser { background: var(--film); color: #ECEDEA; border-top: 0; }
 .teaser .lede { color: #B9BFBA; }
-.teaser .sheet { padding-left: 0; padding-right: 0; background: transparent; box-shadow: none; }
+.teaser .sheet { align-self: center; padding-left: 0; padding-right: 0; background: transparent; box-shadow: none; }
 .teaser .sheet::before, .teaser .sheet::after { left: 0; right: 0; }
 .teaser .sheet-grid { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 640px) { .teaser .sheet-grid { grid-template-columns: repeat(2, 1fr); } .teaser .sheet-grid .frame:nth-child(3) { display: none; } }
