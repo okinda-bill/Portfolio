@@ -4,7 +4,7 @@ The redesign lives on the `redesign-wip` branch. It goes to `main` (the live sit
 
 ## Blocking
 
-- [ ] **BTM Photography originals.** The gallery still shows placeholders. The only copies found online are 600 × 315 px previews (too small). Need 15 to 30 full-size photos (weddings, events, portraits, documentary, including the UNFPA competition entry), each with place and month/year.
+- [x] **BTM Photography gallery.** 26 photos chosen from Google Photos (okinda27@gmail.com), saved to `Downloads/Portfolio site photos/BTM`. Captions use the photo date only; add places if wanted.
 - [ ] **Partner names.** No clearance from Generation Kenya yet, so no employer is named anywhere on the site. Keep it that way until cleared.
 
 ## Where the content came from
@@ -15,6 +15,7 @@ The redesign lives on the `redesign-wip` branch. It goes to `main` (the live sit
 | 109 graduates placed by the employer team, 12 cohorts, 70+ employers | BDO_Tools.xlsx SUMMARY and Placements tabs (14 Oct 2026). Team figures, worded as "our employer team" |
 | 20+ employers onboarded, 300+ leads, 200+ coached, $50k+, 97% CSAT | CV (Bill's own figures) |
 | UNFPA 3 Zeros Photo Competition, 3rd place, Zero GBV and Harmful Practices | Photo of the award (Pictures/Screenshots) |
+| BTM gallery (26 photos) | Google Photos, okinda27@gmail.com (searches for BTMphotography, wedding, black and white and similar) |
 | Headshots and event photos | Bill's Downloads folder (resized copies in `Downloads/Portfolio site photos`) |
 
 ## Worth a second look
@@ -24,6 +25,8 @@ The redesign lives on the `redesign-wip` branch. It goes to `main` (the live sit
 - The downloadable CV (`cv/Bill-Okinda-CV.pdf`) includes a personal phone number. It will be public once live.
 - Photo captions assume Bill is the person in the suit at the graduation and at the networking event. Confirm.
 - Event photos were taken by event photographers. Credit them if required.
+- Gallery photos show clients and models. Check you have their OK for use on the site, especially the Silence series and the Speak out image.
+- Which photo was the UNFPA competition entry? It can be marked in the gallery.
 - No testimonials yet. Section left out rather than invented.
 
 ## Set-up

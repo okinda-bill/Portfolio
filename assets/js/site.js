@@ -56,7 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const source = b.querySelector("img");
         img.src = source.dataset.full || source.currentSrc || source.src;
         img.alt = source.alt;
-        cap.textContent = b.closest("figure")?.querySelector("figcaption")?.innerText.replace(/\s+/g, " ") || source.alt;
+        const fc = b.closest("figure")?.querySelector("figcaption");
+        cap.textContent = fc ? [...fc.children].map((c) => c.textContent.trim()).filter(Boolean).join(", ") : source.alt;
         box.showModal();
       });
     });
